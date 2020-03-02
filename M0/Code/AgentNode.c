@@ -34,13 +34,13 @@ void agentNodeDelete(AgentNode** head, int pos) {
   AgentNode* prev = NULL;
   int i = 0;
 
-  if (curr != NULL && curr->next == NULL) {
-    if (pos == 0) {
+  if (pos == 0) {
+    if (curr != NULL) {
       prev = *head;
       *head = curr->next;
       free(prev);
     }
-    return;  
+    return;
   }
 
   // loop until we reach the index

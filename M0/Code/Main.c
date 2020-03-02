@@ -150,7 +150,7 @@ void createAgent(AgentNode** agents) {
   printf("Edad: ");
   scanf("%d", &agent.age);
 
-  printf("Misiones (escribir '&' sin apostrofes para terminar lista):\n");
+  printf("Misiones (escribir '$' sin apostrofes para terminar lista):\n");
   while (true) {
     scanf("%s", &aux);
 
