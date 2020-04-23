@@ -1,0 +1,13 @@
+#!/bin/bash
+
+FILE=new.txt
+
+sed -i '
+  s/Alice/Cesar/g;
+  s/Queen of Hearts/Lorena/g;
+  s/Queen/Lorena/g;
+  s/Court/Tec/g;
+  s/court/Tec/g;
+  s/CHAPTER/HOUR/g
+' ${FILE}
+echo "Done!"
